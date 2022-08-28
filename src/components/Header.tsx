@@ -8,7 +8,7 @@ import { useState } from 'react'
 const Header = () => {
   const [open, setOpen] = useState(false)
   return (
-    <header className="pr-10">
+    <header className="pr-10 bg-primary">
       <nav className="flex justify-between items-center">
         <Image src={LogoIcon} alt="logo" className="h-9 cursor-pointer" />
         <ul className="md:flex hidden items-center gap-10">

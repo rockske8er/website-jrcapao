@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         primary: '#23A6B4',
+        rocket: '#121214',
         lightprimary: '#ECF3FF',
       },
     },

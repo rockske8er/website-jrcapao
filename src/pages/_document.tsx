@@ -17,7 +17,7 @@ export default function Document() {
 
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
       </Head>
-      <body>
+      <body className={'overflow-y-auto'}>
         <Main />
         <NextScript />
       </body>

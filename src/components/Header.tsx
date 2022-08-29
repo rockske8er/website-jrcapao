@@ -2,14 +2,14 @@ import Image from 'next/image'
 import { Menu } from './Menu'
 import { X, List } from 'phosphor-react'
 
-import LogoIcon from './../assets/images/logo.png'
+import LogoIcon from './../assets/images/brand.png'
 import { useState } from 'react'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
   return (
-    <header className="pr-10 bg-primary">
-      <nav className="flex justify-between items-center">
+    <header className="p-4">
+      <nav className="flex  max-w-5xl mx-auto justify-between items-center">
         <Image src={LogoIcon} alt="logo" className="h-9 cursor-pointer" />
         <ul className="md:flex hidden items-center gap-10">
           <Menu />

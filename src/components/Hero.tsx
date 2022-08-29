@@ -7,15 +7,15 @@ import { Clipboard } from 'phosphor-react'
 
 const Hero = () => {
   return (
-    <section className={'w-full '}>
+    <section className={'w-full bg-lightprimary'}>
       <div className="flex max-w-5xl mx-auto md:flex-row flex-col gap-5 pt-12">
         <div className="flex-1 flex flex-col justify-center p-4 md:p-0">
           <div className="">
             <h1
-              className="md:text-5xl text-4xl font-semibold tracking-wide md:leading-tight
+              className="md:text-3xl font-krona tracking-wide md:leading-tight
           leading-snug"
             >
-              Be prepared for the mountains and beyond.
+              CANDIDATO A DEPUTADO DISTRITAL
             </h1>
           </div>
 
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           <div className="flex md:gap-4 gap-2 flex-wrap">
-            <ButtonFill>Contact Us</ButtonFill>
+            <ButtonFill>Fale conosco</ButtonFill>
             <ButtonOutline />
           </div>
         </div>
@@ -36,14 +36,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-rocket">
-        <div className="max-w-5xl mx-auto flex md:flex-row flex-col md:mt-12 gap-4 md:p-4  rounded-md sm:p-4">
+      <div className="bg-rocket py-10">
+        <div className="max-w-5xl mx-auto  flex md:flex-row flex-col md:mt-12 gap-4 md:p-4  rounded-md sm:p-4">
           <div
             className={
               'py-8 px-4 border-b-4 border-primary hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
             }
           >
-            <Clipboard className="h-12 w-12 text-primary" />
+            <Clipboard className="h-12 w-12 text-white" />
             <h1 className="text-white font-semibold text-lg my-3">
               {'Candidato ficha limpa'}
             </h1>
@@ -52,9 +52,6 @@ const Hero = () => {
                 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor'
               }
             </p>
-            <button className="text-rose-600 font-medium text-sm my-1">
-              Read More
-            </button>
           </div>
 
           <div
@@ -81,7 +78,7 @@ const Hero = () => {
               'py-8 px-4 border-b-4 border-primary hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
             }
           >
-            <Clipboard className="h-12 w-12 text-primary" />
+            <Clipboard className="h-12 w-12 text-primary hover:text-white" />
             <h1 className="text-white font-semibold text-lg my-3">
               {'Candidato ficha limpa'}
             </h1>

@@ -8,9 +8,9 @@ import { useState } from 'react'
 const Header = () => {
   const [open, setOpen] = useState(false)
   return (
-    <header className="p-4">
+    <header className="p-4 bg-lightprimary">
       <nav className="flex  max-w-5xl mx-auto justify-between items-center">
-        <Image src={LogoIcon} alt="logo" className="h-9 cursor-pointer" />
+        <Image src={LogoIcon} alt="logo" className="h-4 w-4 cursor-pointer" />
         <ul className="md:flex hidden items-center gap-10">
           <Menu />
         </ul>

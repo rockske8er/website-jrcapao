@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         poppins: 'Poppins',
         roboto: 'Roboto',
+        krona: 'Krona One',
       },
       colors: {
         primary: '#23A6B4',

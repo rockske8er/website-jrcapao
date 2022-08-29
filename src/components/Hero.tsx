@@ -4,8 +4,6 @@ import { ButtonFill } from './ButtonFill'
 import { ButtonOutline } from './ButtonOutline'
 
 import Icon1 from './../assets/images/icon-1.png'
-import Icon2 from './../assets/images/icon-1.png'
-import Icon3 from './../assets/images/icon-1.png'
 
 const Hero = () => {
   const Info = [
@@ -15,12 +13,12 @@ const Hero = () => {
       des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: Icon2,
+      icon: Icon1,
       title: 'Fundo partidario',
       des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
     },
     {
-      icon: Icon3,
+      icon: Icon1,
       title: '1 Candidatura ao um cargo publico',
       des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
     },
@@ -28,18 +26,23 @@ const Hero = () => {
   return (
     <section className={'py-4 md:px-4'}>
       <div className="flex max-w-5xl mx-auto md:flex-row flex-col gap-5 pt-12">
-        <div className="flex-1 flex-col justify-between items-center">
-          <h1
-            className="md:text-5xl text-4xl font-semibold tracking-wide md:leading-tight
+        <div className="flex-1 flex flex-col justify-center p-4 md:p-0">
+          <div className="">
+            <h1
+              className="md:text-5xl text-4xl font-semibold tracking-wide md:leading-tight
           leading-snug"
-          >
-            Be prepared for the mountains and beyond.
-          </h1>
-          <p className="text-gray-600 md:w-2/3 md:py-4 py-2 leading-relaxed">
-            Are you looking for amazing hiking travel? Don’t worry! We got it
-            for you!
-          </p>
-          <br />
+            >
+              Be prepared for the mountains and beyond.
+            </h1>
+          </div>
+
+          <div className="">
+            <p className="text-gray-600 md:w-2/3 md:py-4 py-2 leading-relaxed">
+              Are you looking for amazing hiking travel? Don’t worry! We got it
+              for you!
+            </p>
+          </div>
+
           <div className="flex md:gap-4 gap-2 flex-wrap">
             <ButtonFill>Contact Us</ButtonFill>
             <ButtonOutline />

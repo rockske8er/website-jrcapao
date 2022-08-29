@@ -1,4 +1,4 @@
-import { Play, WhatsappLogo } from 'phosphor-react'
+import { WhatsappLogo } from 'phosphor-react'
 
 const ButtonOutline = () => {
   return (

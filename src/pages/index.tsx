@@ -4,7 +4,7 @@ import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <main className={'font-poppins'}>
+    <main className={'font-poppins w-full'}>
       <Header />
       <Hero />
     </main>

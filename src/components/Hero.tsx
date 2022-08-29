@@ -3,28 +3,11 @@ import Image from 'next/image'
 import { ButtonFill } from './ButtonFill'
 import { ButtonOutline } from './ButtonOutline'
 
-import Icon1 from './../assets/images/icon-1.png'
+import { Clipboard } from 'phosphor-react'
 
 const Hero = () => {
-  const Info = [
-    {
-      icon: Icon1,
-      title: 'Candidato ficha limpa',
-      des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
-    },
-    {
-      icon: Icon1,
-      title: 'Fundo partidario',
-      des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
-    },
-    {
-      icon: Icon1,
-      title: '1 Candidatura ao um cargo publico',
-      des: 'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor.',
-    },
-  ]
   return (
-    <section className={'py-4 md:px-4'}>
+    <section className={'w-full '}>
       <div className="flex max-w-5xl mx-auto md:flex-row flex-col gap-5 pt-12">
         <div className="flex-1 flex flex-col justify-center p-4 md:p-0">
           <div className="">
@@ -53,22 +36,65 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-white max-w-5xl mx-auto flex md:flex-row flex-col md:mt-12 gap-10 md:p-4 mt-5 rounded-md sm:p-4">
-        {Info.map((info, i) => (
+      <div className="bg-rocket">
+        <div className="max-w-5xl mx-auto flex md:flex-row flex-col md:mt-12 gap-4 md:p-4  rounded-md sm:p-4">
           <div
-            key={i}
             className={
-              'p-4 hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
+              'py-8 px-4 border-b-4 border-primary hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
             }
           >
-            <Image src={info.icon} alt="icon" className="h-12 w-12" />
-            <h1 className="font-semibold text-lg my-3">{info.title}</h1>
-            <p className="text-gray-600 text-sm leading-relaxed">{info.des}</p>
+            <Clipboard className="h-12 w-12 text-primary" />
+            <h1 className="text-white font-semibold text-lg my-3">
+              {'Candidato ficha limpa'}
+            </h1>
+            <p className="text-white text-sm leading-relaxed">
+              {
+                'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor'
+              }
+            </p>
             <button className="text-rose-600 font-medium text-sm my-1">
               Read More
             </button>
           </div>
-        ))}
+
+          <div
+            className={
+              'py-8 px-4 border-b-4 border-primary hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
+            }
+          >
+            <Clipboard className="h-12 w-12 text-primary" />
+            <h1 className="text-white font-semibold text-lg my-3">
+              {'Candidato ficha limpa'}
+            </h1>
+            <p className="text-white text-sm leading-relaxed">
+              {
+                'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor'
+              }
+            </p>
+            <button className="text-rose-600 font-medium text-sm my-1">
+              Read More
+            </button>
+          </div>
+
+          <div
+            className={
+              'py-8 px-4 border-b-4 border-primary hover:bg-primary overflow-hidden rounded-xl sm:mx-4'
+            }
+          >
+            <Clipboard className="h-12 w-12 text-primary" />
+            <h1 className="text-white font-semibold text-lg my-3">
+              {'Candidato ficha limpa'}
+            </h1>
+            <p className="text-white text-sm leading-relaxed">
+              {
+                'Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor'
+              }
+            </p>
+            <button className="text-rose-600 font-medium text-sm my-1">
+              Read More
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   )

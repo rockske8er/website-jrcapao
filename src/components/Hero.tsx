@@ -1,7 +1,6 @@
 import JuniorImage from './../assets/images/jr-capao.png'
 import Image from 'next/image'
 import { ButtonFill } from './ButtonFill'
-import { ButtonOutline } from './ButtonOutline'
 
 import { Clipboard } from 'phosphor-react'
 
@@ -28,7 +27,6 @@ const Hero = () => {
 
           <div className="flex md:gap-4 gap-2 flex-wrap">
             <ButtonFill>Fale conosco</ButtonFill>
-            <ButtonOutline />
           </div>
         </div>
         <div className="flex-1">

@@ -21,7 +21,7 @@ const About = () => {
             </h1>
           </div>
 
-          <div className="">
+          <div className="my-8">
             <p className="md:font-poppins font-semibold text-center text-gray-600 md:p-4  leading-relaxed">
               Are you looking for amazing hiking travel? Don’t worry! We got it
               for you! Are you looking for amazing hiking travel? Don’t worry!
